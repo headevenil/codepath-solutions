@@ -171,15 +171,15 @@ string LPS(string s) {
 		let offset = 0;
 		while (offset + length <= s.size()) {
 			let substring = s.substr(offset, length);
-			if (palindrome(substring))
+			if (isPalindrome(substring))
 				return substring;
 			offset++;
 		}
 	}
-	return s.substr(0,1);
+	return s[0];
 }
 
-bool palindrome(string s) {
+bool isPalindrome(string s) {
 	for (let i = 0; i < s.size()/2; i++)
 		if (characters[i] != characters[s.size() - i - 1])
 			return false;
