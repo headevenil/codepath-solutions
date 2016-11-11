@@ -1,11 +1,11 @@
 /**
  * Created by Deepankit on 11/6/2016.
  */
-public class RecursiveLongestCommonPalindrome {
+public class RecursiveLongestCommonPalindromeSubSequence {
   public static void main(String[] args) {
-    RecursiveLongestCommonPalindrome recursiveLongestCommonPalindrome = new RecursiveLongestCommonPalindrome();
+    RecursiveLongestCommonPalindromeSubSequence recursiveLongestCommonPalindromeSubSequence = new RecursiveLongestCommonPalindromeSubSequence();
     String inputString = "BBABCBCAB";
-    int commonPalindrome = recursiveLongestCommonPalindrome.findLongestCommonPalindrome(inputString, 0, inputString.length() - 1);
+    int commonPalindrome = recursiveLongestCommonPalindromeSubSequence.findLongestCommonPalindrome(inputString, 0, inputString.length() - 1);
     System.out.println(commonPalindrome);
   }
 
